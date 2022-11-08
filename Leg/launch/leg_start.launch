@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find panel_description)/launch/panel_spawn.launch"/>
+    <!-- <include file="$(find panel_description)/launch/robocol_rover_control.launch"/> -->
+    <!-- <include file="$(find panel_description)/launch/robocol_rover_systems.launch"/>  -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find panel_description)/rviz/panel.rviz" />
+</launch>
